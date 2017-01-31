@@ -1,0 +1,66 @@
+$badass: "http://www.publicdomainpictures.net/pictures/60000/velka/cat-silhouette-vintage-background.jpg";
+$nohover: #333;
+$hover: #111;
+$li-a-padding: 14px 16px;
+$textdec: none;
+$link-color: white;
+$font: Sans-serif;
+$font-hover-c: red;
+$margin-l: 10px;
+$margin-r: 10px;
+
+
+body { 
+  margin: 0;
+  margin-left: $margin-l;
+  margin-right: $margin-r;
+  background: url($badass);
+  background-color: $link-color;
+  background-position: 40% 0;
+  font-family: $font;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $nohover;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: $link-color;
+    text-align: center;
+    padding: $li-a-padding;
+    text-decoration: $textdec;
+  }
+  li a:hover {
+    background-color: $hover;
+    color: $font-hover-c;
+
+  }
+}
+
+figure  {
+  float: right;
+  figcaption{
+    font-style: italic;
+  }
+}
+
+p {
+  float: left;
+  width: 500px;
+}
+
+footer  {
+  position:fixed;
+  bottom: 3%;
+  margin-left: $margin-l;
+}
